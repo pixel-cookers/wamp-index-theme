@@ -65,7 +65,16 @@ $langues = array(
 		'txtNoProjet' => 'Aucun projet.<br /> Pour en ajouter un nouveau, cr&eacute;ez simplement un r&eacute;pertoire dans \'www\'.',
 		'txtAlias' => 'Vos Alias',
 		'txtNoAlias' => 'Aucun alias.<br /> Pour en ajouter un nouveau, utilisez le menu de WAMPSERVER.',
-		'faq' => 'http://www.wampserver.com/faq.php'
+		'faq' => 'http://www.wampserver.com/faq.php',
+	)
+);
+
+$px_langues = array(
+	'en' => array(
+		'txtFooter' => 'Wamp Index <a href="http://www.pixel-cookers.com">Pixel Cookers</a> Theme'
+	),
+	'fr' => array(
+		'txtFooter' => 'Thème Index Wamp <a href="http://www.pixel-cookers.com">Pixel Cookers</a>'
 	)
 );
 
@@ -290,7 +299,7 @@ $pageContents = <<< EOPAGE
 	<footer class="footer">
       <div class="container">
         <ul class="footer-links">
-          <li class="pull-right">Wamp Index <a href="http://www.pixel-cookers.com">Pixel Cookers</a> Theme</li>
+          <li class="pull-right">{$px_langues[$langue]['txtFooter']}</li>
           <li class="pull-right"><iframe src="http://ghbtns.com/github-btn.html?user=pixel-cookers&repo=WampIndexThemePixelCookers&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe></li>
           <li><a href="http://{$_SERVER['REMOTE_ADDR']}">{$_SERVER['REMOTE_ADDR']}</a></li>
