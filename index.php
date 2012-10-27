@@ -28,7 +28,7 @@ $wampserverVersion = str_replace('"','',$result[1]);
 
 
 // repertoires  gnorer dans les projets
-$projectsListIgnore = array ('.','..');
+$projectsListIgnore = array ('.','..', '.git', '_pwi');
 
 
 // textes
