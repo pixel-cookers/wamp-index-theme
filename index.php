@@ -291,7 +291,7 @@ $pageContents = <<< EOPAGE
       <div class="container">
         <ul class="footer-links">
           <li class="pull-right">Wamp Index <a href="http://www.pixel-cookers.com">Pixel Cookers</a> Theme</li>
-          <li class="pull-right"><iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch&count=true"
+          <li class="pull-right"><iframe src="http://ghbtns.com/github-btn.html?user=pixel-cookers&repo=WampIndexThemePixelCookers&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe></li>
           <li><a href="http://{$_SERVER['REMOTE_ADDR']}">{$_SERVER['REMOTE_ADDR']}</a></li>
         </ul>
