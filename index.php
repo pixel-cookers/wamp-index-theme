@@ -209,6 +209,9 @@ $pageContents = <<< EOPAGE
 	<link href="_pwi/css/docs.css" rel="stylesheet">
 
 	<style>
+		.projects {
+			color: #ccc;
+		}
 		.projects a, .aliases a, .tools a {
 			display: block;
 			font-size: 16px;
