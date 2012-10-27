@@ -1,0 +1,7 @@
+# ignore all
+*
+# except
+!_pwi/
+!index.php
+!README.md
+!.gitignore
