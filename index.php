@@ -213,6 +213,13 @@ $pageContents = <<< EOPAGE
 			color: #ccc;
 		}
 		.projects a, .aliases a, .tools a {
+			-webkit-transition: 0.2s ease;
+			-moz-transition: 0.2s ease;
+			-ms-transition: 0.2s ease;
+			-o-transition: 0.2s ease;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+			transition: 0.2s ease;
 			display: block;
 			font-size: 16px;
 			padding: 2px 0 2px 3px;
