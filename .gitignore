@@ -1,7 +1,7 @@
 # ignore all
 *
 # except
-!_pwi/
+!_pwi
 !index.php
 !README.md
 !.gitignore
