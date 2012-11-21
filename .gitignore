@@ -1,8 +1,0 @@
-# ignore all
-*
-# except
-!_pwi
-!index.php
-!index.html
-!README.md
-!.gitignore
