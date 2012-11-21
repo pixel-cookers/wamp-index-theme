@@ -264,24 +264,26 @@ $pageContents = <<< EOPAGE
       </div>
     </div>
     <div class="container">
-		<div style="float: left; width: 33%">
-			<h2>{$langues[$langue]['txtProjet']}</h2>
-			<ul class="projects unstyled">
-			$projectContents
-			</ul>
-		</div>
-		<div style="float: left; width: 33%">
-			<h2>{$langues[$langue]['txtAlias']}</h2>
-			<ul class="aliases unstyled">
-			${aliasContents}
-			</ul>
-		</div>
-		<div style="float: left; width: 33%">
-			<h2>{$langues[$langue]['titrePage']}</h2>
-			<ul class="tools unstyled">
-				<li><a href="?phpinfo=1"><i class="icon-wrench"></i> phpinfo()</a></li>
-				<li><a href="phpmyadmin/"><i class="icon-wrench"></i> phpmyadmin</a></li>
-			</ul>
+    	<div class="row">
+			<div class="span4">
+				<h2>{$langues[$langue]['txtProjet']}</h2>
+				<ul class="projects unstyled">
+				$projectContents
+				</ul>
+			</div>
+			<div class="span4">
+				<h2>{$langues[$langue]['txtAlias']}</h2>
+				<ul class="aliases unstyled">
+				${aliasContents}
+				</ul>
+			</div>
+			<div class="span4">
+				<h2>{$langues[$langue]['titrePage']}</h2>
+				<ul class="tools unstyled">
+					<li><a href="?phpinfo=1"><i class="icon-wrench"></i> phpinfo()</a></li>
+					<li><a href="phpmyadmin/"><i class="icon-wrench"></i> phpmyadmin</a></li>
+				</ul>
+			</div>
 		</div>
 
 		<br clear="all" />
