@@ -3,5 +3,7 @@
 # except
 !_pwi
 !index.php
+!index.html
+!index-fr.html
 !README.md
 !.gitignore
