@@ -40,7 +40,9 @@ $langues = array(
 		'titreHtml' => 'WAMPSERVER Homepage',
 		'titreConf' => 'Server Configuration',
 		'versa' => 'Apache Version :',
-		'versp' => 'PHP Version :',
+		'php' => 'PHP',
+		'versp' => 'Version',
+		'confp' => 'Php.ini location',
 		'versm' => 'MySQL Version :',
 		'phpExt' => 'Loaded Extensions : ',
 		'titrePage' => 'Tools',
@@ -57,9 +59,11 @@ $langues = array(
 		'titreHtml' => 'Accueil WAMPSERVER',
 		'titreConf' => 'Configuration Serveur',
 		'versa' => 'Version de Apache:',
-		'versp' => 'Version de PHP:',
-		'versm' => 'Version de MySQL:',
-		'phpExt' => 'Extensions Charg&eacute;es: ',
+		'php' => 'PHP',
+		'versp' => 'Version',
+		'confp' => 'Emplacement php.ini',
+		'versm' => 'Version de MySQL :',
+		'phpExt' => 'Extensions Charg&eacute;es : ',
 		'titrePage' => 'Outils',
 		'txtProjet' => 'Vos Projets',
 		'txtNoProjet' => 'Aucun projet.<br /> Pour en ajouter un nouveau, cr&eacute;ez simplement un r&eacute;pertoire dans \'www\'.',
@@ -193,6 +197,7 @@ foreach ($loaded_extensions as $extension)
 	$phpExtContents .= "<li><i class='icon-th-large'></i> ${extension}</li>";
 
 
+$php_ini_location = php_ini_loaded_file();
 
 
 $pageContents = <<< EOPAGE
@@ -293,8 +298,10 @@ $pageContents = <<< EOPAGE
 			<dl class="content" style="margin-top: 0;">
 				<dt>{$langues[$langue]['versa']}</dt>
 				<dd>${apacheVersion} &nbsp;</dd>
-				<dt>{$langues[$langue]['versp']}</dt>
-				<dd>${phpVersion} &nbsp;</dd>
+				<dt>{$langues[$langue]['php']}</dt>
+				<dd><b>{$langues[$langue]['versp']}</b> : ${phpVersion} &nbsp;<br />
+					<b>{$langues[$langue]['confp']}</b> : ${php_ini_location}&nbsp;
+				</dd>
 				<dt>{$langues[$langue]['versm']}</dt>
 				<dd>${mysqlVersion} &nbsp;</dd>
 				<dt>{$langues[$langue]['phpExt']}</dt>
