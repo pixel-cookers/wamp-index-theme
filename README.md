@@ -2,4 +2,4 @@ WampIndexThemePixelCookers
 ==========================
 
 
-http://pixel-cookers.github.com/WampIndexThemePixelCookers
+http://pixel-cookers.github.io/wamp-index-theme
