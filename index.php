@@ -319,7 +319,7 @@ $pageContents = <<< EOPAGE
       <div class="container">
         <ul class="footer-links">
           <li class="pull-right">{$px_langues[$langue]['txtFooter']}</li>
-          <li class="pull-right"><iframe src="http://ghbtns.com/github-btn.html?user=pixel-cookers&repo=WampIndexThemePixelCookers&type=watch&count=true"
+          <li class="pull-right"><iframe src="http://ghbtns.com/github-btn.html?user=pixel-cookers&repo=wamp-index-theme&type=watch&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe></li>
           <li><a href="http://{$_SERVER['REMOTE_ADDR']}">{$_SERVER['REMOTE_ADDR']}</a></li>
         </ul>
